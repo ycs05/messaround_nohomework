@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" data-theme="dark">
+<head>
+	<title>The World Anti - Homework Union | 世界反作业联盟</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="logo">
+		<img src="icon.png" width=32 height=32><strong>TWAHU</strong>
+		</div>
+		<a class="btn">主页</a>
+		<a href="icon.png">队徽</a>
+		<a href="history/index.html">历史</a>
+		<a href="original_intention">初衷</a>
+		<a href="#joinus" class="btn btn-primary">加入我们</a>
+		<button class="theme-toggle" id="themeToggle">
+            <span class="icon" id="themeIcon">🌙</span>
+            <span id="themeLabel">暗黑模式</span>
+        </button>
+		<!--<a class="btn btn-outline" href="https://ycs05.github.io/home.html">返回到 <span class="btn btn-primary">ycs05 的个人网站</span></a>-->
+	</nav>
+	<main class="container">
+        <section class="card">
+            <h1><strong>The World Anti - Homework Union</strong></h1>
+			<div class="card-header"><span class="badge">No Homework!</span><span class="badge">I'm very happy now!</span></div>
+            <div class="divider"></div>
+			<p>The World Anti - Homework Union，中文名“世界反作业联盟”，旨在<strong>通过减少作业量让学生获得更精彩的生活。</strong></p>
+			<div class="flex mt-16">
+				<a class="btn btn-primary" href="history/index.html">⏱️ 我们的历史</a>
+				<a class="btn btn-outline" href="icon.png"><img src="icon.png" width=24 height=24> 我们的队徽</a>
+				<a class="btn btn-outline" href=""><img src="original_intention_icon.png" width=24 height=24> 我们的初衷</a>
+			</div>
+        </section>
+		<section class="card">
+			<h2>我们的作品</h2>
+			<div class="divider"></div>
+			<img src="no_homework/NO HOMEWORK! By ycs05 - 3.0.png" width=128>
+			<div class="flex mt-16">
+				<span class="tag">宣传图</span>
+			</div>
+			<br>
+			<span>No homework 宣传图 | 由 <a href="https://github.com/ycs05/">ycs05</a> 制作</span>
+			<div class="flex mt-16">
+				<a class="btn btn-primary" href="">🖼️ 查看图集</strong></a>
+				<span class="text-muted text-sm">这可能会让你出现一些无法形容的症状，请谨慎查看！</span>
+			</div>
+			<div class="flex mt-16">
+				<a class="btn" href="https://github.com/ycs05/messaround_nohomework/issues/new">🚩 我来提个小建议</a>
+				<span class="text-muted text-sm">您的建议对我们非常重要！</span>
+			</div>
+		</section>
+		<section class="card" id="joinus">
+			<h2>加入我们！</h2>
+			<div class="divider"></div>
+			<p>只许输入下列信息即可完成 —— 非常简单！</p>
+			<span class="text-muted text-sm">注：带 <strong style="color:red;">*</strong> 的为必填项，我们不会泄露您的个人信息。</span>
+			<br>
+			<span><strong style="color:red;">*</strong> 昵称：</span><input>
+			<br>
+			<span class="text-muted text-sm">该选项决定了组织内的人如何称呼您。</span>
+			<br>
+			<span>姓：</span><input>
+			<span>名：</span><input>
+			<br><br>
+			<span>出生日期：<input> 年 <input> 月 <input> 日</span>
+			<br>
+			<span>电子邮箱：<input>@<input></span>
+			<br>
+			<span>手机号码：+<input> <input></span>
+			<br><br>
+			<button class="btn btn-primary" onclick="(async(btn)=>{btn.disabled=true;btn.innerText='正在注册……';await new Promise(r=>setTimeout(r,2000));alert('注册失败！\n原因：主站“https://userfiles.antihomework.gov/”访问失败。\n请尝试以下解决方案：\n1、切换网络。\n2、重启路由器或宽带。\n3、主站容易被 DDoS，可能需要等待一段时间才能进入。');btn.innerText='立即加入！';btn.disabled=false;})(this)">立即加入！</button>
+		</section>
+		<div class="footer">
+			<strong><span>纯整活项目 所有组织均为虚假组织 请勿轻信</span></strong>
+			<br>
+			<span><a href="https://github.com/ycs05/messaround_nohomework/">本项目</a>由 <a href="https://github.com/ycs05">ycs05</a> 制作，使用 <a href="https://mit-license.org/">MIT License</a> 开源协议。</span>
+		</div>
+    </main>
+	<script src="switchthememode.js"></script>
+</body>

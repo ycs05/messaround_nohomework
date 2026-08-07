@@ -4,6 +4,8 @@
 	<title>The World Anti - Homework Union | 世界反作业联盟</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="世界反作业联盟（TWAHU，The World Anti - Homework Union），旨在通过减少作业量让学生获得更精彩的生活。">
+	<meta name="keywords" content="作业, Homework, 反作业, Anti-homework">
 	<link rel="icon" href="icon.png">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -59,18 +61,21 @@
 			<p>只许输入下列信息即可完成 —— 非常简单！</p>
 			<span class="text-muted text-sm">注：带 <strong style="color:red;">*</strong> 的为必填项，我们不会泄露您的个人信息。</span>
 			<br>
-			<span><strong style="color:red;">*</strong> 昵称：</span><input>
-			<br>
-			<span class="text-muted text-sm">该选项决定了组织内的人如何称呼您。</span>
-			<br>
-			<span>姓：</span><input>
-			<span>名：</span><input>
-			<br><br>
-			<span>出生日期：<input> 年 <input> 月 <input> 日</span>
-			<br>
-			<span>电子邮箱：<input>@<input></span>
-			<br>
-			<span>手机号码：+<input> <input></span>
+			<form action="" method="post" class="form-row">
+				<fieldset>
+					<span><strong style="color:red;">*</strong> 昵称：</span><input>
+					<br>
+					<span class="text-muted text-sm">该选项决定了组织内的人如何称呼您。</span>
+					<br>
+					<span>姓名：</span><input name="fullname">
+					<br><br>
+					<span>出生日期：<input type="date"></span>
+					<br>
+					<span>电子邮箱：<input type="email" name="email" required></span>
+					<br>
+					<span>手机号码：<input type="tel" name="tel"></span>
+				</fieldset>
+			</form>
 			<br><br>
 			<button class="btn btn-primary" onclick="(async(btn)=>{btn.disabled=true;btn.innerText='正在注册……';await new Promise(r=>setTimeout(r,2000));alert('注册失败！\n原因：主站“https://userfiles.antihomework.gov/”访问失败。\n请尝试以下解决方案：\n1、切换网络。\n2、重启路由器或宽带。\n3、主站容易被 DDoS，可能需要等待一段时间才能进入。');btn.innerText='立即加入！';btn.disabled=false;})(this)">立即加入！</button>
 		</section>

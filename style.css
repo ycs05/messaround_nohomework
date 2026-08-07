@@ -421,3 +421,13 @@ a:hover {
 .theme-transitioning * {
   transition: none !important;
 }
+
+fieldset {
+	border: 0px;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: -50px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.form-row { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 15px; align-items: center; }
+.form-row input, .form-row select, .form-row datalist { flex: 1; min-width: 0px; padding: 2px 0px; border: 2px solid #ccc; border-radius: 10px; }
